@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 이서윤체 폰트 적용을 위한 코드 */
+        @font-face {
+          font-family: "LeeSeoyun";
+          src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+            format("woff");
+          font-weight: normal;
+          font-style: normal;
+        }
+
+        /* body태그 자체에 css 요소 부여 */
+body {
+	font-family: "LeeSeoyun";
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	background-image: url('./background.png');
+}
+.container {
+    width: 390px;
+    background-color:black;
+    height: 100%;
+}
+.photos {
+    margin-top: 30px;
+}
+.photo-frame {
+    background-color: aliceblue;
+    margin: 15px 20px;
+    height: 200px;
+
+    background-size: cover;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-title {
+color: aliceblue;
+font-size: 25px;
+font-weight: 90;
+}
+.f-date {
+color: aliceblue;
+font-size: 15px;
+font-weight: 500;
+}
+#image1 {
+    background-image: url('./imag4.jpg');
+}
+#image2 {
+    background-image: url('./imag8.jpg');
+}
+#image3 {
+    background-image: url('./imag9.jpg');
+}
+#image4 {
+    background-image: url('./imag3.jpg');
+}
+.photo-frame {
+    position: relative;
+}
+.photo-description {
+    color: black;
+    background-color:aliceblue;
+
+    width: fit-content;
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    position: absolute;
+  bottom: 0;
+
+  transform: translate(-50%);
+  left: 50%;
+
+}
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.showText {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+.hideText {
+
+}
+          </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+	      <div id="image1" class="photo-frame">
+					<span id="desc1" class="photo-description">
+						안녕 고지호
+					</span>
+				</div>
+	      <div id="image2" class="photo-frame">
+					<span id="desc2" class="photo-description">
+						나는 임주희야
+					</span>
+				</div>
+	      <div id="image3" class="photo-frame">
+					<span id="desc3" class="photo-description">
+						메롱메롱
+					</span>
+				</div>
+	      <div id="image4" class="photo-frame">
+					<span id="desc3" class="photo-description">
+						야호야호
+					</span>
+            </div>
+        <div class="footer">
+            <p class="f-title">즐거운 데이트</p>
+            <p class="f-date">2021.05.07~</p>
+        </div>
+</body>
+</html>
